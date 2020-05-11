@@ -9,6 +9,7 @@ public class AssessmentTDDTest {
     public void shouldCheckIfLeapYear() {
         AssessmentTDD assessmentTDD = new AssessmentTDD();
         assertTrue(assessmentTDD.checkIfLeapYear(2000));
+        assertFalse(assessmentTDD.checkIfLeapYear(2001));
 
     }
 }

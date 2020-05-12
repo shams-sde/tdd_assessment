@@ -14,6 +14,9 @@ public class AssessmentTDDTest {
         assertFalse(assessmentTDD.checkIfLeapYear(1700));
         assertFalse(assessmentTDD.checkIfLeapYear(1800));
         assertFalse(assessmentTDD.checkIfLeapYear(1900));
+        assertFalse(assessmentTDD.checkIfLeapYear(2017));
+        assertFalse(assessmentTDD.checkIfLeapYear(2018));
+        assertFalse(assessmentTDD.checkIfLeapYear(2019));
 
     }
 }

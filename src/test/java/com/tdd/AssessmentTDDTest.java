@@ -10,6 +10,7 @@ public class AssessmentTDDTest {
         AssessmentTDD assessmentTDD = new AssessmentTDD();
         assertTrue(assessmentTDD.checkIfLeapYear(2000));
         assertFalse(assessmentTDD.checkIfLeapYear(2001));
+        assertTrue(assessmentTDD.checkIfLeapYear(2004));
 
     }
 }

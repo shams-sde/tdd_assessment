@@ -18,7 +18,8 @@ public class StringCalculatorTDD {
                     continue;
                 }
                 for (String data : line.split(delimiter)) {
-                    int num = Integer.parseInt(data.trim());
+                    int num = 0;
+                    if(data.trim().length() > 0) num= Integer.parseInt(data.trim());
                     if (num < 0) {
                         negatives.append(data + ", ");
                         continue;

@@ -26,5 +26,6 @@ public class StringCalculatorTDDTest {
 
         assertEquals(stringCalculatorTDD.add("//-\n1000-2"), 1002);
         assertEquals(stringCalculatorTDD.add("//-\n1001-2"), 2);
+        assertEquals(stringCalculatorTDD.add("//[***]\n1***2***3"), 6);
     }
 }

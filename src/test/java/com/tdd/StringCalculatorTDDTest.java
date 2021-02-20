@@ -10,5 +10,6 @@ public class StringCalculatorTDDTest {
         StringCalculatorTDD stringCalculatorTDD = new StringCalculatorTDD();
         assertEquals(stringCalculatorTDD.add(""), 0);
         assertEquals(stringCalculatorTDD.add("1"), 1);
+        assertEquals(stringCalculatorTDD.add("1, 5"), 6);
     }
 }

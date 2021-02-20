@@ -7,7 +7,7 @@ public class StringCalculatorTDD {
         if(numbers.isEmpty()) return sum;
 
         for (String num : numbers.split(",")) {
-            sum += Integer.parseInt(num);
+            sum += Integer.parseInt(num.trim());
         }
 
         return sum;

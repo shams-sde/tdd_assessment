@@ -9,9 +9,14 @@ public class StringCalculatorTDD {
         if(numbers.isEmpty()) return sum;
 
         try (Scanner scanner = new Scanner(numbers)) {
+            String delimiter = ",";
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                for (String num : line.split(",")) {
+                if (line.contains("//")) {
+                    delimiter = line.replace("//", "").trim();
+                    continue;
+                }
+                for (String num : line.split(delimiter)) {
                     sum += Integer.parseInt(num.trim());
                 }
             }

@@ -22,7 +22,7 @@ public class StringCalculatorTDD {
                     if (num < 0) {
                         negatives.append(data + ", ");
                         continue;
-                    } else if (negatives.length() == 0) {
+                    } else if (negatives.length() == 0 && num < 1001) {
                         sum += num;
                     }
                 }

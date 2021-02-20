@@ -23,5 +23,8 @@ public class StringCalculatorTDDTest {
         Assertions.assertThrows(Exception.class, () -> {
             stringCalculatorTDD.add("-1, -5");
         });
+
+        assertEquals(stringCalculatorTDD.add("//-\n1000-2"), 1002);
+        assertEquals(stringCalculatorTDD.add("//-\n1001-2"), 2);
     }
 }

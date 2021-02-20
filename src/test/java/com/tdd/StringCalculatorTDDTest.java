@@ -9,5 +9,6 @@ public class StringCalculatorTDDTest {
     public void shouldAdd() {
         StringCalculatorTDD stringCalculatorTDD = new StringCalculatorTDD();
         assertEquals(stringCalculatorTDD.add(""), 0);
+        assertEquals(stringCalculatorTDD.add("1"), 1);
     }
 }

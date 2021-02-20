@@ -6,6 +6,10 @@ public class StringCalculatorTDD {
         int sum = 0;
         if(numbers.isEmpty()) return sum;
 
+        for (String num : numbers.split(",")) {
+            sum += Integer.parseInt(num);
+        }
+
         return sum;
     }
 }

@@ -14,7 +14,8 @@ public class StringCalculatorTDD {
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 if (line.contains("//")) {
-                    delimiter = line.replace("//", "").trim();
+                    delimiter = line.replace("//", "").
+                            trim().replace("][","]|[");
                     continue;
                 }
                 for (String data : line.split(delimiter)) {
